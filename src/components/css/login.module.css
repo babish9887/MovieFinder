@@ -1,0 +1,108 @@
+:root {
+    --color-primary: #6741d9;
+    --color-primary-light: #7950f2;
+    --color-text: #dee2e6;
+    --color-text-dark: #adb5bd;
+    --color-background-100: #343a40;
+    --color-background-500: #2b3035;
+    --color-background-900: #212529;
+    --color-red: #fa5252;
+    --color-red-dark: #e03131;
+  }
+
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  
+    color: var(--color-text);
+    background-color: var(--color-background-900);
+    padding: 2.4rem;
+  }
+  
+
+  .main{
+    background-color: var(--color-background-500);
+    width: 100%;
+    height: 94vh;
+  }
+
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    background-color: var(--color-background-900);
+    color: var(--color-text);
+    padding: 2rem;
+    border-radius: 8px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .container h1{
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+  
+  input {
+    background-color: var(--color-background-500);
+    color: var(--color-text);
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    width: 100%;
+    border-radius: 4px;
+  }
+  
+ .submit {
+    background-color: var(--color-primary-light);
+    color: var(--color-text);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+  .submit:hover{
+    background: #6741d9;
+  }
+  
+  .signup, .fp{
+    font-size: 1.5rem;
+    background-color: none;
+    color: var(--color-primary-light);
+    background: var(--color-background-900);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0.8rem;
+  }
+  .forgotpassword{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+  }
+  .forgotpassword Link{
+    text-decoration: none;
+  }
+  
+  .fp{
+    color: var(--color-text);
+    margin: 0.5rem 0;
+    text-decoration: none;
+  }
+
+  
