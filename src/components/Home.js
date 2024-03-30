@@ -6,13 +6,14 @@ import { Link } from "react-router-dom";
 import Cookies from "js-cookie";
 import toast from "react-hot-toast";
 
-const KEY = "2830fe71";
+
+const KEY = process.env.KEY;
 const headerfiles = {
   method: "GET",
   headers: {
     "Content-Type": "application/json",
-    Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MjIxMDk4NWFhOWJiMmY1NDE4Mjk0YzM3ZGUxZmE0NSIsInN1YiI6IjY1OTkwNmI1ODliNTYxMDFhNGMzZDVkNiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.zfSB08vsDIqeDDwbKuXY2DzE3Y6UfXw4w1VhaSXWlQE",
+    Authorization:process.env.TMDB_TOKEN
+     
   },
 };
 const average = (arr) =>
@@ -280,7 +281,6 @@ function NumResults({ user }) {
     window.location.href = "/login";
   }
 
-  // w-full border border-transparent rounded-none rounded-r-lg p-4 flex items-center justify-center text-sm font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500
   function showToast() {
     const buttonStyle = {
       backgroundColor: "#4CAF50",
@@ -311,7 +311,7 @@ function NumResults({ user }) {
         <Link className="login-logout" onClick={showToast}>
           Logout
         </Link>
-        <Link className="user" to="/profile">
+        <Link className="user" to="#">
           {user.name.split(" ")[0]}
         </Link>
       </div>

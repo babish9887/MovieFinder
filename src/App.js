@@ -5,7 +5,7 @@ import Home from './components/Home';
 import Signup from './components/signup';
 import {Toaster} from 'react-hot-toast';
 import Error from './Error.js'
-// import Forgotpassword from './components/forgotpassword';
+import Forgotpassword from './components/forgotpassword';
 
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
       <Route path='/signup' element={<Signup />}/>
       <Route path='*' element={<Error />}/>
 
-      {/* <Route path='/forgotpassword' element={<Forgotpassword />}/> */}
+      <Route path='/forgotpassword' element={<Forgotpassword />}/>
     </Routes>
     <Toaster toastOptions={{
       className: '',
